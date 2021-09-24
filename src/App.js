@@ -5,7 +5,7 @@ import Nav from "./Components/Nav";
 
 function App() {
   const [news, setNews] = useState([]);
-  const [searchkey, setSearchkey] = useState("football");
+  const [searchkey, setSearchkey] = useState("club football");
   useEffect(() => {
     fetch(`https://free-news.p.rapidapi.com/v1/search?q=${searchkey}&lang=en`, {
       method: "GET",
